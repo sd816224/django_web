@@ -1,0 +1,27 @@
+{% extends 'event/master.html' %}
+
+{% block title %}
+    search venue
+{% endblock %}
+
+<{% block content %}
+    <center>
+    {%  if searched %}
+
+
+        <h1>you searched for {{ searched }}</h1>
+
+        {% for venue in venues  %}
+            {{ venue }} -{{ venue.address }} <br>
+        {% endfor %}
+    {% else %}
+
+        <h1>you forgot to search something</h1>
+
+     {% endif %}
+
+    </center>
+
+</iframe>
+
+{% endblock %}

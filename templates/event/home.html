@@ -1,0 +1,26 @@
+{% extends 'event/master.html' %}
+
+{% block title %}
+    events home page
+{% endblock %}
+
+<{% block content %}
+    <center>
+    <h1>hello  {{ first_name }}</h1>
+    {{ year }} <br/>
+    {{ month }} <br/>
+    {{ month_number }}
+
+    {{ cal|safe }}
+     <br/> <br/> <br/> <br/>
+    {{ current_year }}
+
+    {{ time }}
+    </center>
+    <iframe src="https://calendar.google.com/calendar/embed?src=luckysportsman456%40gmail.com&ctz=Europe%2FLondon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+    <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials">
+</iframe>
+
+{% endblock %}
